@@ -1,0 +1,22 @@
+// VOLUME OF A CYLINDER
+
+#include<stdio.h>
+#define PI 3.1416
+
+
+int main()
+{
+    float r, h, v;
+
+    printf("Enter the value of radius: ");
+    scanf("%f", &r);
+
+    printf("Enter the value of height: ");
+    scanf("%f", &h);
+
+    v = PI*r*r*h;
+
+    printf ("\nThe volume of cylinder is: %.2f", v);
+
+    return 0;
+}
