@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+int main()
+{
+    int x, y, q1, r1, q2, r2;
+
+    printf("Enter the value of x: ");
+    scanf("%d", &x);
+    printf("Enter the value of y: ");
+    scanf("%d", &y);
+
+    q1 = x/y;
+    r1 = x%y;
+
+    q2 = y/x;
+    r2 = y%x;
+
+    printf("\n--- While dividing X by Y ---");
+    printf("\nQuotient is %d and Remainder is %d",q1,r1);
+
+    printf("\n\n--- While dividing Y by X ---");
+    printf("\nQuotient is %d and Remainder is %d",q2,r2);
+
+
+    return 0;
+}
