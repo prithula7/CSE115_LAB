@@ -1,1 +1,17 @@
+// VOLUME OF A CUBE
 
+#include<stdio.h>
+
+int main()
+{
+    float a, v;
+
+    printf("Enter the length of one side of the cube: ");
+    scanf("%f", &a);
+
+    v = a*a*a;
+
+    printf ("\nThe volume of cube is: %.2f", v);
+
+    return 0;
+}
