@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    float a, b, c;
+    double j, k;
+
+    printf("Type the constant a: ");
+    scanf("%f",&a);
+    printf("Type the constant b: ");
+    scanf("%f",&b);
+    printf("Type the constant c: ");
+    scanf("%f",&c);
+
+
+    j = (-b+(sqrt(((b*b)-(4*a*c)))))/(2*a);
+    k = (-b-(sqrt(((b*b)-(4*a*c)))))/(2*a);
+
+    printf("The solution of x is = %.2lf ,%.2lf",j,k);
+
+
+
+ return 0;
+}
