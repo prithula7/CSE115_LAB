@@ -1,0 +1,47 @@
+// question number 1 
+// TAX PROBLEM
+
+
+
+#include <stdio.h>
+#include<math.h>
+int main()
+{
+    float t, s;
+    printf("Enter the amount of your salary: ");
+    scanf("%f",&s);
+
+    //tax = (base tax)+((percentage of excess)*(salary-min salary in the range));
+
+    if(s>=0.00 && s<=14999.99)
+    {
+        t = (0.00 + (15*(s-0.00)));
+        printf("The tax is: %.2f",t);
+    }
+    else if(s>=15000.00 && s<=29999.99)
+    {
+        t = (2250.00 + (18*(s-15000.00)));
+        printf("The tax is: %.2f", t);
+    }
+    else if(s>=30000.00 && s<=49999.99)
+    {
+        t = (5400.00 + (22*(s-30000.00)));
+        printf("The tax is: %.2f", t);
+    }
+    else if(s>=50000.00 && s<=79999.99)
+    {
+        t = (11000.00 + (27*(s-50000.00)));
+        printf("The tax is: %.2f", t);
+    }
+    else if(s>=80000.00 && s<=150000.00)
+    {
+        t = (21600.00 + (33*(s-80000.00)));
+        printf("The tax is: %.2f", t);
+    }
+    else
+    {
+        printf("Not Applicable");
+    }
+
+    return 0;
+}
